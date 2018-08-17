@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+#seko * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+#seko {
+	padding: 0 10px 20px;
+}
+img, #seko h3 img {
+	width: auto !important;
+	max-width: 100%;
+}
+#seko h3 {
+	margin: 0;
+	padding: 0;
+}
+#seko h4 {
+	font-family:"游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+	font-size: 1.4em;
+	font-weight: normal;
+	text-align: left;
+	margin: 10px 0;
+	border-bottom: solid 1px #98826b;
+}
+#seko .inner {
+	text-align: left;
+	font-size: 1em;
+	overflow: hidden;
+}
+#seko .inner p {
+	font-size: 1em;
+}
+#seko #model {
+	width: 280px;
+	margin: 2px auto 30px;
+	background: url(../page_image/seko/m_bg.png) repeat-x left bottom #fff;
+	border: solid 2px #98826b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#seko #data {
+	width: 280px;
+	min-height: 160px;
+	background: #fff;
+	padding: 15px;
+	position: relative;
+	margin: 0 auto;
+}
+#seko #data:before {
+	position: absolute;
+	top: -18px;
+	left: 16px;
+	content: url(../page_image/seko/icon_home.png);
+}
+#seko #data h5 {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0 0 5px;
+	border-bottom: solid 1px #98826b;
+}
+#seko #data .ls_m {
+	letter-spacing: 0.5em;
+    margin: 0 -0.5em 0 0;
+}
+
+.seko-img {
+	padding: 20px 5px;
+	margin: 0 auto 20px;
+}
+.seko-img-nav {
+	clear: both;
+	margin: 0 0 30px 0;
+}
+.seko-img-nav .slick-track {
+	-webkit-flex-wrap: wrap; /* Safari */
+	flex-wrap:         wrap;
+}
+#seko .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#seko .seko-img-nav .slick-slide {
+	margin: 0 10px 10px 0;
+}
+#seko .seko-img-nav .slick-slide img {
+	height: 60px;
+	width: auto;
+	max-width: 90px;
+}
+#seko .seko-img-nav .slick-slide img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=0.7);
+	-ms-filter: "alpha(opacity=0.7)";
+	transition: all 0.4s ease;
+}
+
+@media only screen and (max-width:640px) {
+.sp_br:before {
+	content: "\A";
+	white-space: pre;
+}
+#seko #m_d {
+	padding: 20px 0 0 0;
+}
+#seko .seko-img img {
+	height: 230px;
+	width: auto;
+	max-width: 640px;
+}
+
+}
+
+@media screen and (min-width: 960px){
+#seko {
+	padding: 0;
+	margin: -3rem 0 20px;
+}
+#seko h3 img {
+	width: auto;
+}
+#seko .inner {
+	position: relative;
+}
+.seko-img {
+	float: left;
+	width: 640px;
+	padding: 20px 0;
+}
+#seko #m_d {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+#seko .seko-img img {
+	height: 427px;
+	width: auto;
+	max-width: 640px;
+}
+#seko .seko-img-nav .slick-track {
+    width: 1000px !important;
+	transform:translate3d(0, 0px, 0px) !important;
+}
+#seko .seko-img-nav .slick-slide {
+	margin: 0 10px 10px 0;
+	width: auto;
+	min-width: 91px;
+}
+#seko .seko-img-nav .slick-slide:nth-child(10n+10) {
+	margin: 0 0 10px 0;
+}
+
+}
+
